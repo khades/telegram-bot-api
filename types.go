@@ -98,8 +98,9 @@ type Chat struct {
 	LastName            string     `json:"last_name"`                      // optional
 	AllMembersAreAdmins bool       `json:"all_members_are_administrators"` // optional
 	Photo               *ChatPhoto `json:"photo"`
-	Description         string     `json:"description,omitempty"` // optional
-	InviteLink          string     `json:"invite_link,omitempty"` // optional
+	Description         string     `json:"description,omitempty"`    // optional
+	InviteLink          string     `json:"invite_link,omitempty"`    // optional
+	PinnedMessage       *Message   `json:"pinned_message,omitempty"` // optional
 }
 
 // IsPrivate returns if the Chat is a private conversation.
